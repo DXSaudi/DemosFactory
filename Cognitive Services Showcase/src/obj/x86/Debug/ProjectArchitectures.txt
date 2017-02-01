@@ -1,0 +1,2 @@
+C:\Users\naalnas\OneDrive - Microsoft\Initatives\Demos Factory\Cognitive Services Showcase\src\CognitiveServicesShowcase.csproj;x86
+C:\Users\naalnas\OneDrive - Microsoft\Initatives\Demos Factory\Cognitive Services Showcase\src\ServiceHelpers\ServiceHelpers.csproj;neutral

@@ -1,0 +1,83 @@
+﻿<UserControl x:Class="IntelligentKioskSample.Controls.EmotionFaceIdentificationBorder" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="using:IntelligentKioskSample.Controls" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Name="userControl">
+
+    <Grid>
+        <Rectangle x:Name="faceRectangle" Stroke="White" Visibility="Visible" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+        <Grid FlowDirection="LeftToRight" VerticalAlignment="Top" x:Name="captionCanvas" Visibility="Visible" HorizontalAlignment="Left" SizeChanged="OnCaptionSizeChanged">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <!--<Grid x:Name="genderAgeGrid"
+                  Height="43"
+                  MinWidth="50"
+                  Background="White"
+                  VerticalAlignment="Top"
+                  HorizontalAlignment="Center"
+                  Opacity="0.8">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Image x:Name="genderIcon"
+                       Margin="5,3,3,3" />
+                <Viewbox Grid.Column="1">
+                    <TextBlock Foreground="Black"
+                               Margin="3,2,3,2"
+                               VerticalAlignment="Center"
+                               Text="caption"
+                               FontFamily="Segoe UI Semilight" />
+                </Viewbox>
+            </Grid>-->
+
+            <Grid x:Name="emotionGrid" Visibility="Visible" MinWidth="50" VerticalAlignment="Top" HorizontalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Grid x:Name="emotionGridBackground" Opacity="0.8" Grid.RowSpan="2" />
+
+                <Grid Width="130" Margin="0,0,0,0" Visibility="Visible" x:Name="emotionFeedbackGrid">
+
+
+                    <Border Grid.Row="1" x:Name="WinnerGrid" Margin="2,0,2,0" >
+                        <Grid>
+ 
+                            <Grid x:Name="emotionFeedbackTextBackground" Background="Green" Opacity="1"  />
+
+                            <TextBlock Text="Winner!!" x:Name="emotionFeedbackText" FontSize="15" Margin="2" Foreground="White" FontFamily="Segoe UI" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                        </Grid>
+                    </Border>
+                </Grid>
+
+                <!--The grid below used to be a ListView with an ItemsSource bound to a collection plus a template, but a bug in Windows would make it crash during layout 
+                when executed outside the debugger. -->
+
+                <!--<Grid Grid.Row="1" Margin="2" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <local:EmotionMeterControl EmotionName="{Binding EmotionData[0].EmotionName}" EmotionValue="{Binding EmotionData[0].EmotionScore}" MeterForeground="{Binding BalloonForeground}" />
+                    <local:EmotionMeterControl Grid.Row="1"  EmotionName="{Binding EmotionData[1].EmotionName}" EmotionValue="{Binding EmotionData[1].EmotionScore}" MeterForeground="{Binding BalloonForeground}"/>
+                    <local:EmotionMeterControl Grid.Row="2" EmotionName="{Binding EmotionData[2].EmotionName}" EmotionValue="{Binding EmotionData[2].EmotionScore}" MeterForeground="{Binding BalloonForeground}"/>
+               
+                </Grid>-->
+
+
+                <Border Grid.Row="1" Background="White" Margin="2" BorderBrush="#FFC5C5C5" BorderThickness="1">
+                    <TextBlock x:Name="emotionPerc" Foreground="#FF138D77" Text="100% Happy!" Margin="2" FontSize="13" FontWeight="SemiLight" TextAlignment="Center" Padding="0,0,0,2" />
+                </Border>
+
+            </Grid>
+
+            <Polyline x:Name="emotionPolyline" StrokeThickness="0" Grid.Row="1" Opacity="0.8" VerticalAlignment="Top" HorizontalAlignment="Center" Points="0,0,10,10,20,0" Fill="White" />
+
+        </Grid>
+    </Grid>
+
+</UserControl>

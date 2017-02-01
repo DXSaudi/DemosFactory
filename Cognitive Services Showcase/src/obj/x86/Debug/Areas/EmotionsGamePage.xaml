@@ -1,0 +1,92 @@
+﻿<Page x:Class="IntelligentKioskSample.Areas.EmotionsGamePage" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:ctl="using:IntelligentKioskSample.Controls" xmlns:local="using:IntelligentKioskSample.Areas" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d">
+
+    <Grid x:ConnectionId='1' x:Name="root" Background="#feb901">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="5*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.ColumnSpan="3">
+            <Grid.Background>
+                <SolidColorBrush Color="White" />
+            </Grid.Background>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Foreground="#feb901" FontSize="45" Margin="0,0,15,0" FontFamily="Segoe MDL2 Assets" Text="" />
+
+                <TextBlock Foreground="#feb901" FontSize="45" FontWeight="Light" FontFamily="Segoe UI Light" Text="Emotionizer" />
+            </StackPanel>
+
+
+        </Grid>
+
+
+        <Grid x:ConnectionId='2' Grid.Row="1" x:Name="cameraContainer" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.2*" />
+                <RowDefinition />
+                <RowDefinition Height="0.2*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.1*" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="0.1*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid x:ConnectionId='6' Grid.Row="1" Grid.Column="1" x:Name="webCamHostGrid" Visibility="Collapsed">
+                <ctl:ImageWithFaceBorderUserControl x:ConnectionId='13' BalloonBackground="#ECCF11" BalloonForeground="#D86C2A" FlowDirection="RightToLeft" x:Name="imageFromCameraWithFaces" ShowEmotionRecognition="True" DetectFacesOnLoad="True" ShowDialogOnApiErrors="False" ShowMultipleFaces="True" ShowRecognitionResults="True" />
+                <ctl:emotionCameraControl x:ConnectionId='14' x:Name="cameraControl" ShowDialogOnApiErrors="False" />
+            </Grid>
+
+            <ctl:ImageWithFaceBorderUserControl x:ConnectionId='7' BalloonBackground="#ECCF11" BalloonForeground="#D86C2A" Grid.Row="1" Grid.Column="1" x:Name="imageWithFacesControl" ShowEmotionRecognition="True" DetectFacesOnLoad="True" ShowMultipleFaces="True" ShowRecognitionResults="True" />
+
+
+            <TextBlock x:ConnectionId='8' x:Name="progressNote" Foreground="Black" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,0" FontSize="25" FontWeight="Light" FontFamily="Segoe UI Light" Text="" />
+
+            <StackPanel x:ConnectionId='9' Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="gameMsgContainer" Visibility="Collapsed" Orientation="Horizontal">
+
+                <TextBlock Foreground="White" FontSize="60" FontWeight="Light" FontFamily="Segoe UI Light" Text="Show" />
+                <TextBlock x:ConnectionId='11' x:Name="emotionRequired" Foreground="White" FontSize="60" Margin="15,0,5,0" FontWeight="Bold" FontStyle="Italic" FontFamily="Segoe UI Bold" Text="Happy" />
+
+                <TextBlock x:ConnectionId='12' x:Name="emojiRequired" Foreground="White" FontSize="60" Margin="5,0,25,0" FontWeight="Bold" FontFamily="Segoe UI Bold" Text="😃😃" />
+
+
+                <TextBlock Foreground="White" FontSize="60" FontWeight="Light" FontFamily="Segoe UI Light" Text="Face " />
+            </StackPanel>
+
+
+            <TextBlock x:ConnectionId='10' x:Name="timer" Foreground="White" Opacity="0.9" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontSize="100" FontWeight="Bold" FontFamily="Segoe UI Bold" Text="" Visibility="Collapsed" />
+        </Grid>
+
+        <ProgressRing x:ConnectionId='3' Grid.Row="1" Grid.Column="1" Visibility="Collapsed" Foreground="Black" Height="50" Width="50" x:Name="progressRing" />
+
+
+        <StackPanel Margin="15,12,5,12" MaxWidth="300" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.RowSpan="2" Grid.ColumnSpan="2" >
+            <TextBlock Text="How to play:" FontSize="30"  TextAlignment="Left" HorizontalAlignment="Left" FontWeight="Bold" />
+
+            <TextBlock Text="- Bring a freind!" Margin="0,12,0,0" FontWeight="Light" TextAlignment="Left" FontSize="17" HorizontalAlignment="Left" />
+            <TextBlock Text="- Wait until you get both recognized" FontWeight="Light" FontSize="17" TextWrapping="Wrap" TextAlignment="Left" Margin="0,9,0,0" HorizontalAlignment="Left" />
+            <TextBlock Text="- Check the emotion you are asked to act like under the camera" TextWrapping="Wrap" FontSize="17" TextAlignment="Left" FontWeight="Light" Margin="0,9,0,0" HorizontalAlignment="Left" />
+            <TextBlock Text="- The better you show that emotion, the higher score you get!" TextWrapping="Wrap" FontSize="17" TextAlignment="Left" FontWeight="Light" Margin="0,9,0,0" HorizontalAlignment="Left" />
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Orientation="Horizontal">
+
+            <Button x:ConnectionId='4' Content="Restart" x:Name="RestartButton" Grid.Row="2" Margin="6" HorizontalAlignment="Center" Background="Red" FontWeight="SemiLight" Visibility="Collapsed" Foreground="White"                     />
+
+            <Button x:ConnectionId='5' Content="Email me the results!" x:Name="EmailButton" Visibility="Collapsed" Grid.Row="2" Margin="6" FontWeight="SemiLight" Background="Black" Foreground="White"                   />
+
+
+        </StackPanel>
+    </Grid>
+
+</Page>
+

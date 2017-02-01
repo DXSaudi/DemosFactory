@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MallKioskDemoSettings>
+  <GenericRecommendations>
+    <!--  URLS when a single male person is in front of the camera. -->
+    <Recommendation Id="MaleYoungerThan12" Url="http://saudi.souq.com/sa-en/minecraft-by-microsoft-for-xbox-one-xbox-one-13466600004/u/"/>
+    <Recommendation Id="MaleYoungerThan18" Url="http://saudi.souq.com/sa-en/microsoft-xbox-one-1tb-console-with-the-division-game-+-3-months-live-gold-membership-+-gears-of-war-ultimate-edition-4048900006/u/"/>
+    <Recommendation Id="MaleYoungerThan25" Url="https://www.microsoftstore.com/store/mssa/en_IE/cat/Office/categoryID.70209200?icid=homepage_spotlight_1_O365logo_Compare_080416"/>
+    <Recommendation Id="MaleYoungerThan32" Url="http://saudi.souq.com/sa-en/microsoft-surface-pro-4-intel-core-i5-128-gb-4-gb-wifi-windows-10-pro-silver-9136800094/u/"/>
+    <Recommendation Id="MaleYoungerThan40" Url="http://saudi.souq.com/sa-en/microsoft-surface-pro-4-intel-core-i7-wifi-512gb-16gb-win-10-pro-+-surface-pro-4-cover-eng-keyboard-+-black-leather-sleeve-bundle-8810600094/u/"/>
+    <Recommendation Id="MaleYoungerThan50" Url="http://saudi.souq.com/sa-en/microsoft-surface-pro-4-intel-core-i7-wifi-512gb-16gb-win-10-pro-+-surface-pro-4-cover-eng-keyboard-+-black-leather-sleeve-bundle-8810600094/u/"/>
+    <Recommendation Id="MaleYoungerThan55" Url="http://saudi.souq.com/sa-en/microsoft-surface-pro-4-intel-core-i7-wifi-512gb-16gb-win-10-pro-+-surface-pro-4-cover-eng-keyboard-+-black-leather-sleeve-bundle-8810600094/u/"/>
+    <Recommendation Id="MaleYoungerThan60" Url="http://saudi.souq.com/sa-en/microsoft-surface-pro-4-intel-core-i7-wifi-512gb-16gb-win-10-pro-+-surface-pro-4-cover-eng-keyboard-+-black-leather-sleeve-bundle-8810600094/u/"/>
+    <Recommendation Id="MaleOlder" Url="http://saudi.souq.com/sa-en/microsoft-surface-pro-4-intel-core-i7-wifi-512gb-16gb-win-10-pro-+-surface-pro-4-cover-eng-keyboard-+-black-leather-sleeve-bundle-8810600094/u/"/>
+
+    <!--  URLS when a single female person is in front of the camera. -->
+    <Recommendation Id="FemaleYoungerThan12" Url="http://saudi.souq.com/sa-en/project-spark-by-microsoft-for-xbox-one-xbox-one-14644700004/u/"/>
+    <Recommendation Id="FemaleYoungerThan18" Url="http://saudi.souq.com/sa-en/microsoft-u5k-00040-explorer-touch-mouse-pink-2247000047/u/"/>
+    <Recommendation Id="FemaleYoungerThan25" Url="http://saudi.souq.com/sa-en/microsoft-surface-pro-4-intel-core-i7-wifi-512gb-16gb-win-10-pro-+-surface-pro-4-cover-eng-keyboard-+-black-leather-sleeve-bundle-8810600094/u/"/>
+    <Recommendation Id="FemaleYoungerThan32" Url="https://www.microsoftstore.com/store/mssa/en_IE/cat/Office/categoryID.70209200?icid=homepage_spotlight_1_O365logo_Compare_080416"/>
+    <Recommendation Id="FemaleYoungerThan40" Url="http://saudi.souq.com/sa-en/microsoft-surface-pro-4-intel-core-i7-wifi-512gb-16gb-win-10-pro-+-surface-pro-4-cover-eng-keyboard-+-black-leather-sleeve-bundle-8810600094/u/"/>
+    <Recommendation Id="FemaleYoungerThan50" Url="http://saudi.souq.com/sa-en/microsoft-surface-pro-4-intel-core-i7-wifi-512gb-16gb-win-10-pro-+-surface-pro-4-cover-eng-keyboard-+-black-leather-sleeve-bundle-8810600094/u/"/>
+    <Recommendation Id="FemaleYoungerThan60" Url="http://saudi.souq.com/sa-en/microsoft-surface-pro-4-intel-core-i7-wifi-512gb-16gb-win-10-pro-+-surface-pro-4-cover-eng-keyboard-+-black-leather-sleeve-bundle-8810600094/u/"/>
+    <Recommendation Id="FemaleOlder" Url="http://saudi.souq.com/sa-en/microsoft-surface-pro-4-intel-core-i7-wifi-512gb-16gb-win-10-pro-+-surface-pro-4-cover-eng-keyboard-+-black-leather-sleeve-bundle-8810600094/u/"/>
+
+    <!--  URLS when at least 2 adults are in front of the camera -->
+    <Recommendation Id="TwoOrMoreAdults" Url="https://www.microsoftstore.com/store/mssa/en_IE/pdp/Office-365-Home/productID.316488700">
+      <SpeechKeywordBehavior>
+        <BehaviorAction Key="Expensive" Url="https://www.microsoftstore.com/store/mssa/en_IE/pdp/Office-365-Home/productID.316488700"/>
+      </SpeechKeywordBehavior>
+      <SpeechSentimentBehavior>
+        <BehaviorAction Key="Positive" Url="https://www.microsoftstore.com/store/mssa/en_IE/pdp/Office-365-Home/productID.316488700"/>
+        <BehaviorAction Key="Negative" Url="https://www.microsoftstore.com/store/mssa/en_IE/pdp/Office-365-Home/productID.316488700"/>
+      </SpeechSentimentBehavior>
+    </Recommendation>
+
+    <!--  URLS when there is a child and at least another person-->
+    <Recommendation Id="ChildWithOneOrMoreAdults" Url="http://saudi.souq.com/sa-en/microsoft-xbox-one-1tb-console-with-the-division-game-+-3-months-live-gold-membership-+-gears-of-war-ultimate-edition-4048900006/u/">
+      <SpeechKeywordBehavior>
+        <BehaviorAction Key="Expensive" Url="http://saudi.souq.com/sa-en/microsoft-xbox-one-1tb-console-with-the-division-game-+-3-months-live-gold-membership-+-gears-of-war-ultimate-edition-4048900006/u/"/>
+      </SpeechKeywordBehavior>
+      <SpeechSentimentBehavior>
+        <BehaviorAction Key="Negative" Url="http://saudi.souq.com/sa-en/microsoft-xbox-one-1tb-console-with-the-division-game-+-3-months-live-gold-membership-+-gears-of-war-ultimate-edition-4048900006/u/"/>
+      </SpeechSentimentBehavior>
+    </Recommendation>
+  </GenericRecommendations>
+
+  <!--  Personalized recommendations when a recognized person is in front of the camera. -->
+  <PersonalizedRecommendations>
+    <Recommendation Id="Satya Nadella" Url="http://srpidemo.azurewebsites.net/tools.aspx"/>
+    <Recommendation Id="Bill Gates" Url="http://srpidemo.azurewebsites.net/tools.aspx"/>
+  </PersonalizedRecommendations>
+
+</MallKioskDemoSettings>

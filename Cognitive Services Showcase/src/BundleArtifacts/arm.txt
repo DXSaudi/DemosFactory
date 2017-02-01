@@ -1,0 +1,5 @@
+MainPackage=C:\Kiosk\bin\ARM\Debug\IntelligentKioskSample_1.0.14.0_ARM_Debug.appx
+SymbolPackage=C:\Kiosk\AppPackages\IntelligentKioskSample_1.0.14.0_Debug_Test\IntelligentKioskSample_1.0.14.0_ARM_Debug.appxsym
+ResourcePack=C:\Kiosk\bin\ARM\Debug\IntelligentKioskSample_1.0.14.0_scale-100.appx
+ResourcePack=C:\Kiosk\bin\ARM\Debug\IntelligentKioskSample_1.0.14.0_scale-125.appx
+ResourcePack=C:\Kiosk\bin\ARM\Debug\IntelligentKioskSample_1.0.14.0_scale-400.appx
