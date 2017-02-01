@@ -54,4 +54,4 @@ That is it, I will review your demo and upload it to this repo.
 
 ## Have a suggestion?
 
-We want to hear your ideas, suggestion or feedback to make this project the best place to find interesting and up to date demos. Please email us at: SaudiDX@outlook.com
+We want to hear your ideas, suggestion or feedback to make this project the best place to find interesting and up to date demos. Please email us at: SaudiDX@outlook.com or contact me on Twitter [@nasser](http://twitter.com/nasser)

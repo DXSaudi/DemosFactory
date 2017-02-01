@@ -13,6 +13,8 @@ If you are a PHP developer, like me, you know how difficult it is to build solid
 
 So in this demo we will try to cover most of these points either in details or just mentioning it with an external reference for the full details. 
 
+
+
 ### 1. Visual Studio as a Code Editor
 
 Now let's chose your code editor, the place where you are going to spend most of your time as a developer in. Microsoft announced Visual Studio code as free cross-platform code editor, and since it's release it picked up huge interest from the developers communities. Visual Studio Code has great PHP support including code highlighting and autocomplete with many extension that you can install to add extra capaibilities.
@@ -21,6 +23,8 @@ Now let's chose your code editor, the place where you are going to spend most of
 - [Watch Introductory Videos](https://code.visualstudio.com/docs/introvideos/overview) : Watch these short videos to familiarize yourself with the environment.
 
 Now you have Visual Studio Code installed and you know some of the basics. Let's move on to the next step to configure it for you Mr. PHP Developer.
+
+
 
 
 ### 2. Setup VS Code as PHP Development Environment
@@ -37,11 +41,15 @@ There are many PHP extenstions to chose from and they are  all created by the co
 
 You can click on the links above to read the installation steps and requirements for each extenstion. Once you did this you are ready to move to the next step.
 
+
+
 ##### Snippets
 
 Visual Studio Code includes a set of common snippets for PHP. To access these, hit `Ctrl+Space` to get a context specific list.
 
 ![snippets](assets/snippets.png)
+
+
 
 ##### Linting
 
@@ -58,6 +66,7 @@ To set the PHP executable path, open your User or Workspace Settings and add the
     "php.validate.executablePath": "c:/php/php.exe"
 }
 ````
+
 
 
 ### 3. Debugging PHP through VS Code
@@ -96,7 +105,7 @@ Note: The port should match the one you confugured in `php.ini` , for me I confi
 
 You can easily connect your PHP (or whatever) project in VS code to your local Git or GitHub account to sync your code and keep track of your system's versions and changes.
 
-##### Connect to local Git
+#### Connect to local Git
 
 First, you need to have [Git](https://git-scm.com/download) installed on your machine, make sure you install version 2.0 at least. For more information on how to properly install and configure Git, [visit this page](https://www.atlassian.com/git/tutorials/install-git#windows).
 
@@ -113,7 +122,7 @@ First, you need to have [Git](https://git-scm.com/download) installed on your ma
 - Congrats, you have Visual Studio code connected to your local git.
 
 
-##### Connect to GitHub
+#### Connect to GitHub
 
 Now you have VS Code connected to local git, all what you need to do to push your code to GitHub repo are the following steps:
 
@@ -128,6 +137,8 @@ Now you have VS Code connected to local git, all what you need to do to push you
 
 
 That's all. By reaching to this point, you now have a full local PHP development environment equipped with IntelliSense, Debugging, Git and GitHub syncing. Now let's connect all of that to the cloud and utilize Azure DevOps capbilities.
+
+
 
 ### 5. Continuous  Deployment on Azure Web Apps
 
@@ -154,6 +165,8 @@ Let's start by setting up a Continuous Deployment process between our GitHub rep
 ![Website](assets/15.JPG)
 
 That's it, now everytime I push a new code change to my master branch through VS code (or any other code editor) and commit these changes they will get deployed automatically to my Azure website. Sure you are asking yourself now, this is not a good practice in production website, you need to make sure that your code running smoothly in a pre-production environment first, sure, that is what we are going to see later in this Demo :)
+
+
 
 
 ### 6. Site Slots for Managed Deployment & Testing
@@ -184,6 +197,8 @@ As discussed in the previous point, you don't want to push your code directly to
 ![swap slots](assets/20.JPG)
 
 Follow the instruction on the screen and here you go, your new release became production.
+
+
 
 
 ### 7. Run performance testing for your PHP website
@@ -220,6 +235,8 @@ If you would like to run a performance test on your website to make sure the per
 ![PerfTest](assets/23.JPG)
 
 
+
+
 ### 8. A/B Testing (Testing in production)
 
 A common scenario all website developers are facing, your website is working fine in the test environment and passing your QA test. But once deployed in production problems start appearing, which result in a very hectic rollback process. In Azure Web Apps you can run A/B testing to ensure that your new release is not going to suffer from unexpected issues by routing defined percentage from your production traffic to your staging / pre-prod environment.
@@ -238,6 +255,8 @@ This feature in Azure known as "Testing in production" and to use it, follow the
 - Click save.
 
 That is it, now 80% of your traffic will go normally to your production website, and 20% to the staging which contains the new release where you can monitor closely to make sure that  the release you are about to publish have no issues using real usage from real users.
+
+
 
 
 ### 9. PHP Debugging using Zend Z-Ray
@@ -276,10 +295,12 @@ Debugging your code on Visual Studio Code is something, and debugging your code 
 
 ### 10. Summary and Resources
 
-Now as a PHP Developer you have all what it takes to develop, debug, control, continiously deploy, monitor and scale your PHP system starting from your development machine reaching to highly scalable cloud-based production environment. If you need me to deep dive in any of the previous point, please feel free to contact me on Twitter (@Nasser)
+Now as a PHP Developer you have all what it takes to develop, debug, control, continiously deploy, monitor and scale your PHP system starting from your development machine reaching to highly scalable cloud-based production environment. If you need me to deep dive in any of the previous point, please feel free to contact me on Twitter (@Nasser) or email : SaudiDX@outlook.com
 
 
-##### Resources:
+
+
+#### Resources:
 
 - [Configure PHP in Azure App Service Web Apps](https://docs.microsoft.com/en-us/azure/app-service-web/web-sites-php-configure)
 - [PHP Programming in VS Code](https://code.visualstudio.com/Docs/languages/php)

@@ -3,7 +3,7 @@
 
 ## Personalized Meme Bot
 
-Because Bots are fun to build, I thought to make this demo also fun to use. Simply it is a bot that will take your name and will return a meme image personalized with your name. Since there tons of demos showing how to build a bot using the default way (Visual Studio template), I am going to build this demo using Azure Bots Service, a service that is still preview but it is good enought to build fully functional bots.
+Because Bots are fun to build, I thought to make this demo also fun to use. Simply it is a bot that will take your name and will return a meme image personalized with your name. Since there are tons of demos showing how to build a bot using the default way (Visual Studio template), I am going to build this demo using Azure Bots Service, a service that is still in preview but it is good enough to build fully functional bots.
 
 
 ### Create the workspace
@@ -36,6 +36,8 @@ Because Bots are fun to build, I thought to make this demo also fun to use. Simp
 
 
 
+
+
 ###  Language Understanding Intelligent Service (LUIS)
 
 LUIS is one of [Microsoft Cognitive Services](https://www.microsoft.com/cognitive-services/en-us/) which is specialized in understanding natural language and the context of the sentence. This allow you to create bots that can have a dialog with the user and understand the intent of each sentence. 
@@ -48,7 +50,7 @@ Our simple demo can actually be built without LUIS, but I am brining LUIS to the
 
 -  Now click on the app name to start training your app to understand certain phrases and build your intent and entities.
 
-![bot](assets/9,JPG)
+![bot](assets/9.JPG)
 
 - Creat new intent by clicking on the + sign next to `Intents` in the left side menu. The intent we are going to create is `NameReceived` . We will provide one sentence as an example of this intent. Later we are going to add more variations that lead to the same intent. Here we are telling LUIS whenever you recieve similar phrases then they belong to this intent `NameReceived`.
 
@@ -69,6 +71,8 @@ Our simple demo can actually be built without LUIS, but I am brining LUIS to the
 - After entering as many utterances as you can and training your app, you are ready to publish it. Click on the publish button at the top left and then hit update published application.
 
 ![bot](assets/14.JPG)
+
+
 
 
 
@@ -223,6 +227,8 @@ public class BasicLuisDialog : LuisDialog<object>
 - Try your bot in the chat window on the right side, you should be getting a result similar to this:
 
 ![bot](assets/15.JPG)
+
+
 
 
 
