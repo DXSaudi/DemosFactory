@@ -64,7 +64,7 @@ this.DetectedFaces = await FaceServiceHelper.DetectAsync(
 
 If you want to trace the logic of this scenario, it is in `AutomaticPhotoCapturePage.xaml` and the code-behind of this page. I leave you with some sample usage of this scenario:
 
-![AI makes me 1 year older](assets/2.JPG)
+![AI makes me 1 year older](assets/2.jpg)
 *AI made me 1 year older*
 
 
