@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WordGame.ResultPage"
+             Title="ListView">
+    <Grid RowSpacing="0" Padding="0,20,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Label x:Name="scoreLabel" FontSize="Large" XAlign="Center" FontFamily="Bold" TextColor="#7cbb00"/>
+        <ListView x:Name="answersList"
+          IsPullToRefreshEnabled="False"
+          Grid.Row="1">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal" Padding="0,5,0,5">
+                            <StackLayout Padding="0,0,0,0" VerticalOptions="StartAndExpand" Orientation="Vertical">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <StackLayout Grid.Column="0" Orientation="Horizontal" HorizontalOptions="StartAndExpand" Padding="20,0,0,0">
+                                        <Label Text="{Binding answer}" FontSize="16" FontFamily="Bold" TextColor="#00a1f1"/>
+                                    </StackLayout>
+                                    <StackLayout Grid.Column="1"  Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
+                                        <Label Text="-" FontSize="16" FontFamily="Bold"  />
+                                        <Label Text="{Binding result}" FontSize="16" FontFamily="Bold"  />
+                                    </StackLayout>
+                                </Grid>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</ContentPage>
