@@ -1,17 +1,15 @@
 You have 60 seconds to find as many countries as possible with a given letter. The app is developed using Xamarin and Visual Studio, and take advantage of Bing spell check API to correct user slips!
 
 
-# Install  
-------
+# Install
   - [Visual Studio 2015][df1] with [Xamarin][df2].
   
 # Usage
-------
 1. **Get started for free** from [cognitive services page][df3].
 2. After you select an account to sign up with, verify your email by requesting verification from the top bar.
-![alt text](https://github.com/DXSaudi/DemosFactory/WordGame/images/emailVerification.png "email verification")
+![alt text](https://github.com/DXSaudi/DemosFactory/blob/master/WordGame/Images/emailVerification.PNG "email verification")
 3. Click on Subscribe to new free trials and check Bing Spell Check then Subscribe. 
-![alt text](https://github.com/DXSaudi/DemosFactory/WordGame/images/subscribe.png "subscribe")
+![alt text](https://github.com/DXSaudi/DemosFactory/blob/master/WordGame/Images/subscribe.PNG "subscribe")
 4. Now you can copy your API key and paste it in the code:
 ```
 client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "{Type your key here}");
@@ -31,12 +29,10 @@ suggestedCorrections.Add(userEntryText.Replace(obj.token, sugg.suggestion));
 Look at [API Reference][df4] for more details.
 
 # Team
-------
   - Nasser AlNasser - Senior Technical Evanglist @Microsoft 
   - Nora AlNashwan - Apps Development Specialist @Microsoft
 
 # License
-------
 MIT
 
 [df1]: <https://www.microsoft.com/en-us/download/details.aspx?id=48146>
