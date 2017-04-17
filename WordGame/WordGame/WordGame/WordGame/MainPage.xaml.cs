@@ -49,7 +49,7 @@ namespace WordGame
         {
             int index;
 
-            if (userEntry.Text.Length == 0) { 
+            if (userEntry.Text == null) { 
                 System.Diagnostics.Debug.WriteLine("Empty answer");
             }else if ( !userEntry.Text.ToLower().StartsWith(letterLabel.Text.ToLower()) ){
                 answers.Add(new Answer { answer = userEntry.Text, result = "Incorrect" });

@@ -7,9 +7,11 @@ You have 60 seconds to find as many countries as possible with a given letter. T
 # Usage
 1. **Get started for free** from [cognitive services page][df3].
 2. After you select an account to sign up with, verify your email by requesting verification from the top bar.
+
 ![alt text](https://github.com/DXSaudi/DemosFactory/blob/master/WordGame/Images/emailVerification.PNG "email verification")
 
 3. Click on Subscribe to new free trials and check Bing Spell Check then Subscribe. 
+
 ![alt text](https://github.com/DXSaudi/DemosFactory/blob/master/WordGame/Images/subscribe.PNG "subscribe")
 
 4. Now you can copy your API key and paste it in the code:
