@@ -1,5 +1,6 @@
 You have 60 seconds to find as many countries as possible with a given letter. The app is developed using Xamarin and Visual Studio, and take advantage of Bing spell check API to correct user slips!
 
+![alt text](https://github.com/DXSaudi/DemosFactory/blob/master/WordGame/Demo.gif "demo")
 
 # Install
   - [Visual Studio 2015][df1] with [Xamarin][df2].
