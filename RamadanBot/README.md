@@ -23,7 +23,8 @@ string DirectLineKey = "Your direct line key";
 ```
 # Acknowledgment
   - [Xamarin Shopping Bot Sample project][df5] and [JSQMessagesViewController][df6] library.
-  - Bot icon and application colors are inspired by [Taah Ramadan App][df7].
+  - [Pray Times][df7] project.
+  - Bot icon and application colors are inspired by [Taah Ramadan App][df8].
 
 # Team
   - Nasser AlNasser - Senior Technical Evanglist @Microsoft 
@@ -38,4 +39,5 @@ MIT
 [df4]: <https://dev.botframework.com/>
 [df5]: <https://github.com/hahaysh/XamarinShoppingBotSample>
 [df6]: <https://github.com/jessesquires/JSQMessagesViewController>
-[df7]: <https://www.behance.net/gallery/38296703/Taah-Ramadan-android-app>
+[df7]: <http://praytimes.org/>
+[df8]: <https://www.behance.net/gallery/38296703/Taah-Ramadan-android-app>
