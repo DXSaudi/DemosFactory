@@ -2,7 +2,7 @@ Ramadan Bot will tell you the time for Iftar and Imsak in Riyadh. He will also s
 
 The project consist of a bot application and an iOS application built by Xamarin.
 
-![alt text](https://github.com/DXSaudi/DemosFactory/blob/master/WordGame/Screenshot.png "screenshot")
+![alt text](https://github.com/DXSaudi/DemosFactory/blob/master/RamadanBot/Screenshot.png "screenshot")
 
 # Install
   - [Visual Studio 2015][df1] with [Xamarin][df2].
